@@ -5,6 +5,13 @@ body {
     background-color: #f2f2f2;
     border: 1px solid;
     font-family: 'Poppins', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container-wrapper {
+    max-width: 1040px;
 }
 
 .container {
@@ -37,6 +44,14 @@ a {
     text-decoration: none;   
 }
 
+.color-gray {
+    color: #727274
+}
+
+.color-white{
+    color: #ffff;
+}
+
 .nav-bar {
     width: 100%;
     display: flex;
@@ -52,24 +67,30 @@ a {
     justify-content: space-between;    
 }
 
-.nav-list-item {
-    /* padding-left: 1rem; */
+.nav-list-item a{
+    font-size: 14px;
+    line-height: 21px;
+    color: #000000;
 }
 
 .hide{
     display:none;  
 }
 
+.intro {
+    padding-top: 6rem;
+}
+
 .intro, .intro-article {
     display: flex;
-    flex-direction: column;
+    flex-direction: column;    
 }
 
 .intro-article-title {
     font-family: 'Poppins', sans-serif;
     font-weight: 800;
     font-size: 40px;
-    line-height: 120%;
+    line-height: 48px;   
 }
 
 .intro-article-text {
@@ -78,6 +99,7 @@ a {
     font-family: 'Poppins', sans-serif;
     font-size: 16px;
     line-height: 30px;
+    font-weight: 400;
 }
 
 .my-works-network {
@@ -91,23 +113,55 @@ a {
     font-family: 'Poppins', sans-serif;
     font-weight: 600;
     font-size: 16px;
-    line-height: 24px;    
+    line-height: 24px;
+    margin-right: 1rem;   
 }
 
+.works-newtwork-list {   
+    display: flex;
+    flex-direction: row;
+    align-items: center;    
+}
+
+.soc-icon {
+    height: fit-content;
+    padding-right: 1rem;
+}
+
+.soc-svg {
+    width: 35px;
+    height: 35px;
+}
 
 .best-work-grid{
    height: fit-content;
 }
 
+.best-works-title {
+    font-size: 28px;
+    font-weight: 800;
+    line-height: 105.3%;
+    margin-block-start: 1.5em;
+    margin-block-end: 1.5em;
+}
+
 .best-work {    
-    margin-bottom: 10px;
+    margin-bottom: 2rem;
     position: relative;    
 }
 
 .best-work-view {
     width: 100%;
-    height: 200px;
-    background-color: red;
+    height: 240px;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.15) 0%, rgba(0, 0, 0, 0) 98.35%), url(assets/back-images/img1.jpeg);
+}
+
+.work-title {
+    color: white;
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 37.5px;
+    margin: 5% 0 0 10%;
 }
 
 .best-work-tools {
@@ -120,7 +174,7 @@ a {
     background-color: #423b39;
     color: white;
     margin: 0 0.5rem 0.5rem 0;
-    padding: 0.2rem 1rem 0.2rem 1rem;
+    padding: 0.5rem 1rem 0.5rem 1rem;
     font-size: 14px;
     font-weight: 500;
     line-height: 21px;
@@ -129,8 +183,11 @@ a {
 .see-btn {
     width: 100%;
     background-color: #f6855b;
-    padding: 0.5rem 0 0.5rem 0;
+    padding: 0.8rem 0 0.8rem 0;
     margin-bottom: 1rem;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 105.3%;
 }
 
 .a, .b, .c, .d, .e {
@@ -199,10 +256,35 @@ a {
     flex-direction: column;
 }
 
+.about-title {
+    font-weight: 800;
+    font-size: 28px;
+    line-height: 105.3%;
+}
+
+.about-text {
+    font-size: 16px;
+    line-height: 24px;
+    padding-bottom: 1rem;
+}
+
+.about-me {
+    margin-bottom: 3rem;
+}
+
 .about-me, .about-list {
     width: 100%;
     /* height: 400px; */
     text-align: left;
+}
+
+.language, .frameworks{
+    border-bottom: 1px solid #cfd2da;
+    padding-bottom: 2.5rem;
+}
+
+.skills{
+    padding-bottom: 2.5rem;
 }
 
 .language-list, .frameworks-list, .skills-list {
@@ -213,7 +295,7 @@ a {
 .resume-btn {
     background-color: #f6855b;
     color: white;
-    padding: 1rem 2rem 1rem 2rem;
+    padding: 1rem 3rem 1rem 3rem;
 }
 
 .lang-list-item, .frameworks-list-item, .skills-list-item {
@@ -230,34 +312,78 @@ a {
     background-color: #f6855b;
 }
 
+
 .contact-title, .contact-text, .form, .submit {
     width: 90%;
     text-align: center;
+}
+
+.contact-title {
+    font-weight: 800;
+    font-size: 28px;
+    line-height: 105.3%;
+}
+
+.contact-text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
 }
 
 .form{
     overflow: hidden;
 }
 
+.contact-links {
+    margin-bottom: 1rem;
+}
+
 .name-email {
     width: 100%;
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    flex-direction: column;
 }
 
 .name, .email {
-    width: 48%;
+    width: 100%;
+    height: 2rem;
+    margin-bottom: 1rem;
 }
 
 .text-area {
     width: 100%;
+    height: 158px;
+    margin-bottom: 1rem;
+}
+
+.submit {
+    height: 58px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 16.85px;
+    background-color: black;
+    margin-bottom: 2rem;
+}
+
+.email {
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.copyright {
+    width:90%;
+    font-size: 16px;
+    line-height: 24px;
+    padding: 2rem 0 2rem 0;
+    text-align: center;
+    border-top: 1px solid;
+    border-color: #ffa07d;
 }
 
 @media screen and (min-width: 768px) {
-    * {
+    /* * {
       max-width: 1440px;
-    }
+    } */   
 
     .nav-list {
         width: 40%;        
@@ -291,11 +417,12 @@ a {
         flex-direction: row;
     }
 
-    .works-network-title {        
+    .works-network-title {       
         font-size: 18px;
         line-height: 27px;    
     }
 
+    .
     .about {
         display: flex;
         flex-direction: column;
@@ -324,7 +451,8 @@ a {
     }
 
     .work-title {
-        margin: 10% 0 0 10%;
+        font-size: 36px;
+        line-height: 54px;
     }
     
     .best-work-tools {
@@ -400,5 +528,16 @@ a {
 
     .contact-title, .contact-text, .form, .submit {
         width: 50%;        
+    }
+
+    .name-email {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .name, .email {
+        width: 47%;
     }
 }
