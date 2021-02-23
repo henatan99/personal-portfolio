@@ -4,7 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="stylesheet.css" />
+    <script src="script.js"></script>    
     <title>Document</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="container">
@@ -50,7 +53,7 @@
                         <span class="tool">Ruby on Rails</span>
                         <span class="tool">Javascript</span>
                     </div>
-                    <button class="see-btn">See the project</button>                      
+                    <button id="show1" class="see-btn" onclick="show1()">See the project</button>                      
                 </article>
                 <article class="best-work b">
                     <div class="best-work-view">
@@ -61,7 +64,7 @@
                         <span class="tool">Ruby on Rails</span>
                         <span class="tool">Javascript</span>
                     </div> 
-                    <button class="see-btn">See the project</button>  
+                    <button id="show2" class="see-btn" onclick="show2()">See the project</button>  
                 </article>
                 <article class="best-work c">
                     <div class="best-work-view">
@@ -72,7 +75,7 @@
                         <span class="tool">Ruby on Rails</span>
                         <span class="tool">Javascript</span>
                     </div>
-                    <button class="see-btn">See the project</button>     
+                    <button id="show3" class="see-btn" onclick="show3()">See the project</button>     
                 </article>
                 <article class="best-work d">
                     <div class="best-work-view">
@@ -83,7 +86,7 @@
                         <span class="tool">Ruby on Rails</span>
                         <span class="tool">Javascript</span>
                     </div>
-                    <button class="see-btn">See the project</button>    
+                    <button id="show4" class="see-btn" onclick="show4()">See the project</button>    
                 </article>
                 <article class="best-work e">
                     <div class="best-work-view">
@@ -94,14 +97,14 @@
                         <span class="tool">Ruby on Rails</span>
                         <span class="tool">Javascript</span>
                     </div>
-                    <button class="see-btn">See the project</button>     
+                    <button id="show5" class="see-btn" onclick="show5()">See the project</button>     
                 </article>                
             </div>
         </section>
 
-        <section class="best-work-detail">
+        <section id="best-work-detail1">
             <div class="screen">
-                <button class="close">X</button>
+                <button id="hide1" class="close-btn" onclick="hide1()">X</button>
             </div>
             <div class="details">
                 <div class="screens-btns-wrapper">
@@ -128,7 +131,135 @@
                         odio ad esse accusamus hic at quae. Aliquam, perferendis? Rem, laudantium.
                     </p>
                 </article>
-            </div>                        
+            </div>                    
+        </section>
+
+        <section id="best-work-detail2">
+            <div class="screen">
+                <button id="hide2" class="close-btn" onclick="hide2()">X</button>
+            </div>
+            <div class="details">
+                <div class="screens-btns-wrapper">
+                    <div class="small-screens">
+                        <span class="screen-item"></span>
+                        <span class="screen-item"></span>
+                        <span class="screen-item"></span>
+                    </div>
+                    <div class="see-btns">
+                        <button class="btn">See Live</button>
+                        <button class="btn">See Source</button>
+                    </div>
+                </div>                
+                <article class="detail-article">
+                    <h1 class="article-title">NewYork Times</h1>
+                    <div class="detail-tools">
+                        <span class="tool">HTML/CSS</span>
+                        <span class="tool">Ruby on Rails</span>
+                        <span class="tool">Javascript</span>
+                    </div>
+                    <p class="detail-text">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam ratione, 
+                        consectetur deleniti doloremque ullam eos, nam adipisci, officiis architecto 
+                        odio ad esse accusamus hic at quae. Aliquam, perferendis? Rem, laudantium.
+                    </p>
+                </article>
+            </div>                    
+        </section>
+
+        <section id="best-work-detail3">
+            <div class="screen">
+                <button id="hide3" class="close-btn" onclick="hide3()">X</button>
+            </div>
+            <div class="details">
+                <div class="screens-btns-wrapper">
+                    <div class="small-screens">
+                        <span class="screen-item"></span>
+                        <span class="screen-item"></span>
+                        <span class="screen-item"></span>
+                    </div>
+                    <div class="see-btns">
+                        <button class="btn">See Live</button>
+                        <button class="btn">See Source</button>
+                    </div>
+                </div>                
+                <article class="detail-article">
+                    <h1 class="article-title">Social Media</h1>
+                    <div class="detail-tools">
+                        <span class="tool">HTML/CSS</span>
+                        <span class="tool">Ruby on Rails</span>
+                        <span class="tool">Javascript</span>
+                    </div>
+                    <p class="detail-text">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam ratione, 
+                        consectetur deleniti doloremque ullam eos, nam adipisci, officiis architecto 
+                        odio ad esse accusamus hic at quae. Aliquam, perferendis? Rem, laudantium.
+                    </p>
+                </article>
+            </div>                    
+        </section>
+
+        <section id="best-work-detail4">
+            <div class="screen">
+                <button id="hide4" class="close-btn" onclick="hide4()">X</button>
+            </div>
+            <div class="details">
+                <div class="screens-btns-wrapper">
+                    <div class="small-screens">
+                        <span class="screen-item"></span>
+                        <span class="screen-item"></span>
+                        <span class="screen-item"></span>
+                    </div>
+                    <div class="see-btns">
+                        <button class="btn">See Live</button>
+                        <button class="btn">See Source</button>
+                    </div>
+                </div>                
+                <article class="detail-article">
+                    <h1 class="article-title">Twitter Redesign</h1>
+                    <div class="detail-tools">
+                        <span class="tool">HTML/CSS</span>
+                        <span class="tool">Ruby on Rails</span>
+                        <span class="tool">Javascript</span>
+                    </div>
+                    <p class="detail-text">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam ratione, 
+                        consectetur deleniti doloremque ullam eos, nam adipisci, officiis architecto 
+                        odio ad esse accusamus hic at quae. Aliquam, perferendis? Rem, laudantium.
+                    </p>
+                </article>
+            </div>                    
+        </section>
+
+        <section id="best-work-detail5">
+            <div class="screen">
+                <button id="hide5" class="close-btn" onclick="hide5()">X</button>
+            </div>
+            <div class="details">
+                <div class="screens-btns-wrapper">
+                    <div class="small-screens">
+                        <span class="screen-item"></span>
+                        <span class="screen-item"></span>
+                        <span class="screen-item"></span>
+                    </div>
+                    <div class="see-btns">
+                        <button class="btn">See Live</button>
+                        <button class="btn">See Source</button>
+                    </div>
+                </div>                
+                <article class="detail-article">
+                    <h1 class="article-title">Bootstrap</h1>
+                    <div class="detail-tools">
+                        <span class="tool">HTML/CSS</span>
+                        <span class="tool">Ruby on Rails</span>
+                        <span class="tool">Javascript</span>
+                    </div>
+                    <p class="detail-text">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam ratione, 
+                        consectetur deleniti doloremque ullam eos, nam adipisci, officiis architecto 
+                        odio ad esse accusamus hic at quae. Aliquam, perferendis? Rem, laudantium.
+                    </p>
+                </article>
+            </div>                    
         </section>
 
         <section class="about border">
@@ -203,6 +334,55 @@
             </ul>
         </div>
         <p>@2020 Microverse</p>
-    </section>
+    </section>   
+
+    <!-- Javascript for button click events -->
+    <script>
+        var x1 = document.getElementById("best-work-detail1");
+        function show1() {                    
+            x1.style.display = "block";          
+        }
+    
+        function hide1() {            
+            x1.style.display = "none";
+        }
+
+        var x2 = document.getElementById("best-work-detail2");
+        function show2() {                    
+            x2.style.display = "block";          
+        }
+    
+        function hide2() {            
+            x2.style.display = "none";
+        }
+
+        var x3 = document.getElementById("best-work-detail3");
+        function show3() {                    
+            x3.style.display = "block";          
+        }
+    
+        function hide3() {            
+            x3.style.display = "none";
+        }
+
+        var x4 = document.getElementById("best-work-detail4");
+        function show4() {                    
+            x4.style.display = "block";          
+        }
+    
+        function hide4() {            
+            x4.style.display = "none";
+        }
+
+        var x5 = document.getElementById("best-work-detail5");
+        function show5() {                    
+            x5.style.display = "block";          
+        }
+    
+        function hide5() {            
+            x5.style.display = "none";
+        }
+    </script>
+    
 </body>
 </html>
