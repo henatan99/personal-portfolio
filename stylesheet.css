@@ -235,7 +235,7 @@ button {
 }
 
 #best-work-detail1 {
-    top: 20%;
+    top: 20%;    
 }
 
 #best-work-detail2 {
@@ -256,8 +256,16 @@ button {
 
 .screen {
     height: 40vw;
-    background-color: yellow;
+    
     position: relative;
+}
+
+.s1 {
+    background-image: url("assets/work-images/twitter-redesign.png");
+}
+
+.s2 {
+    background-image: url("assets/work-images/concert-frontend.png");
 }
 
 .close-btn {
