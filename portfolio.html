@@ -373,14 +373,14 @@
                 If you have an application you are interested, a feature that you need built 
                 or a project that need coding, I'd love to help with it.
             </p>
-            <form class="form">
+            <form class="form" method="post" action="emailsender.php">
                 <div class="name-email">
                     <input class="name" placeholder="Full name*">
                     <input class="email" placeholder="Email*">
                 </div>           
-                <textarea class="text-area" placeholder="Your message"></textarea>
-            </form>
-            <button class="submit color-white">Get in Touch</button>
+                <textarea class="text-area" name="message" placeholder="Your message"></textarea>
+                <input type="submit" class="submit color-white">
+            </form>            
 
             <div class="contact-links">
                 <li class="email color-white">henatan99@gmail.com</li>                
