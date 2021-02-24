@@ -3,7 +3,6 @@ body {
     width: 100%;
     /* height: 2951px; */
     background-color: #f2f2f2;
-    border: 1px solid;
     font-family: 'Poppins', sans-serif;
     display: flex;
     flex-direction: column;
@@ -642,7 +641,7 @@ button {
     }
 
     .about-title, .about-text {
-        width: 70%;
+        width: 90%;
     }
 
     .about-title {
