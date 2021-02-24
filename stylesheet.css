@@ -44,6 +44,11 @@ a {
     text-decoration: none;   
 }
 
+button {
+    border: none;
+    outline: none;
+}
+
 .color-gray {
     color: #727274
 }
@@ -58,6 +63,7 @@ a {
     flex-direction: row;
     justify-content: space-between;
     align-items: baseline;
+    padding-top: 2rem;
 }
 
 .nav-list {
@@ -68,7 +74,7 @@ a {
 }
 
 .nav-list-item a{
-    font-size: 14px;
+    font-size: 16px;
     line-height: 21px;
     color: #000000;
 }
@@ -153,7 +159,32 @@ a {
 .best-work-view {
     width: 100%;
     height: 240px;
+}
+
+.view1 {
     background: linear-gradient(180deg, rgba(0, 0, 0, 0.15) 0%, rgba(0, 0, 0, 0) 98.35%), url(assets/back-images/img1.jpeg);
+}
+
+.view2 {
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.15) 0%, rgba(0, 0, 0, 0) 98.35%), url(assets/back-images/img2.jpeg);
+}
+
+.view3 {
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.15) 0%, rgba(0, 0, 0, 0) 98.35%), url(assets/back-images/img3.jpeg);
+}
+
+.view4 {
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.15) 0%, rgba(0, 0, 0, 0) 98.35%), url(assets/back-images/img2.jpeg);
+}
+
+.view5 {
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.15) 0%, rgba(0, 0, 0, 0) 98.35%), url(assets/back-images/img1.jpeg);
+}
+
+.view1, .view2, .view3, .view4, .view5 {
+    background-repeat: no-repeat;
+    background-position: initial;
+    object-fit: cover;
 }
 
 .work-title {
@@ -339,6 +370,7 @@ a {
     flex-direction: column;
     align-items: center;
     background-color: #f6855b;
+    padding-top: 3rem;
 }
 
 
@@ -414,10 +446,18 @@ a {
 @media screen and (min-width: 768px) {
     /* * {
       max-width: 1440px;
-    } */   
+    } */
+
+    .nav-bar {
+        padding-top: 3rem;
+    }
 
     .nav-list {
         width: 40%;        
+    }
+
+    .nav-list-item a {
+        font-size: 18px;
     }
 
     .hide{
@@ -467,6 +507,10 @@ a {
         grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
     }
 
+    .best-works-title {
+        font-size: 36px;
+    }
+
     .best-work {
         margin-bottom: 0;
         position: relative;        
@@ -478,7 +522,6 @@ a {
         position: absolute;
         top: 0;
         left: 0;
-        background-color: red;
     }
 
     .work-title {
@@ -570,8 +613,16 @@ a {
         width: 70%;
     }
 
+    .about-title {
+        font-size: 36px;
+    }
+
     .contact-title, .contact-text, .form, .submit {
         width: 50%;        
+    }
+
+    .contact-title {
+        font-size: 38px;
     }
 
     .name-email {
@@ -583,5 +634,18 @@ a {
 
     .name, .email {
         width: 47%;
+    }
+
+    .email {
+        display: flex;
+        align-items: center;
+    }
+
+    .contact-links {
+        width: 40%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
     }
 }
