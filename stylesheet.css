@@ -228,11 +228,30 @@ button {
 
 #best-work-detail1, #best-work-detail2, #best-work-detail3, #best-work-detail4, #best-work-detail5 {
     display: none;
-    position: absolute;
-    top: 200px;
+    position: absolute;    
     left: 10%;
     width: 80%;
     background-color: white;
+}
+
+#best-work-detail1 {
+    top: 20%;
+}
+
+#best-work-detail2 {
+    top: 31%;
+}
+
+#best-work-detail3 {
+    top: 42%;
+}
+
+#best-work-detail4 {
+    top: 53%;
+}
+
+#best-work-detail5 {
+    top: 64%;
 }
 
 .screen {
@@ -571,6 +590,10 @@ button {
         grid-column: 5/7;
         grid-row: 4/6;
         height: 100%;
+    }
+
+    #best-work-detail1, #best-work-detail2, #best-work-detail3, #best-work-detail4, #best-work-detail5 {
+        top: 40%;
     }
 
     .screens-btns-wrapper {
