@@ -7,6 +7,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin: 0 8px 8px 8px;
 }
 
 .container-wrapper {
@@ -63,7 +64,7 @@ button {
     flex-direction: row;
     justify-content: space-between;
     align-items: baseline;
-    padding-top: 2rem;
+    padding-top: 1rem;
     position: fixed;
     background-color: whitesmoke;
     z-index: 10;
@@ -84,6 +85,12 @@ button {
 
 .hide{
     display:none;  
+}
+
+.logo {
+    font-weight: 800;
+    font-size: 2rem;
+    color: rgb(117, 82, 82);
 }
 
 .intro {
@@ -480,7 +487,7 @@ button {
     } */
 
     .nav-bar {
-        padding-top: 3rem;
+        padding-top: 2rem;
     }
 
     .nav-list {
@@ -493,6 +500,10 @@ button {
 
     .hide{
         display:block;  
+    }
+
+    .logo {
+        font-size: 3rem;
     }
 
     .intro {
