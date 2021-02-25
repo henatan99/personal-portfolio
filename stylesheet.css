@@ -278,6 +278,10 @@ button {
     background-image: url("assets/work-images/concert-frontend.png");
 }
 
+.s3 {
+    background-image: url("assets/work-images/code-linter.png");
+}
+
 .close-btn {
     width: 2rem;
     height: 2rem;
@@ -324,7 +328,11 @@ button {
     font-weight: 700;
     font-size: 16px;
     line-height: 105.3%;
-    background-color: #f6855b;
+    background-color: #f6855b;    
+}
+
+.btn-p {
+    text-align: center;
 }
 
 .btn-icon {
