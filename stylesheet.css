@@ -57,12 +57,16 @@ button {
 }
 
 .nav-bar {
-    width: 100%;
+    max-width: 1440px;
+    width: 90%;    
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: baseline;
     padding-top: 2rem;
+    position: fixed;
+    background-color: whitesmoke;
+    z-index: 10;
 }
 
 .nav-list {
@@ -648,7 +652,7 @@ button {
         font-size: 36px;
     }
 
-    .contact-title, .contact-text, .form, .submit {
+    .contact-title, .contact-text, .form {
         width: 50%;        
     }
 
@@ -673,10 +677,13 @@ button {
     }
 
     .contact-links {
-        width: 40%;
+        width: fit-content;
         display: flex;
-        flex-direction: row;
-        justify-content: space-between;
+        flex-flow: wrap;
         align-items: center;
+    }
+
+    .my-email {
+        margin-right: 1rem;
     }
 }
