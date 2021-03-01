@@ -172,15 +172,15 @@ button {
 }
 
 .view1 {
-    background: linear-gradient(180deg, rgba(0, 0, 0, 0.15) 0%, rgba(0, 0, 0, 0) 98.35%), url(assets/back-images/img1.jpeg);
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.15) 0%, rgba(0, 0, 0, 0) 98.35%), url(assets/back-images/img3.jpeg);
 }
 
 .view2 {
-    background: linear-gradient(180deg, rgba(0, 0, 0, 0.15) 0%, rgba(0, 0, 0, 0) 98.35%), url(assets/back-images/img2.jpeg);
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.15) 0%, rgba(0, 0, 0, 0) 98.35%), url(assets/back-images/img8.jpeg);
 }
 
 .view3 {
-    background: linear-gradient(180deg, rgba(0, 0, 0, 0.15) 0%, rgba(0, 0, 0, 0) 98.35%), url(assets/back-images/img3.jpeg);
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.15) 0%, rgba(0, 0, 0, 0) 98.35%), url(assets/back-images/img6.jpeg);
 }
 
 .view4 {
@@ -194,7 +194,7 @@ button {
 .view1, .view2, .view3, .view4, .view5 {
     background-repeat: no-repeat;
     background-position: initial;
-    object-fit: cover;
+    background-size: cover;
 }
 
 .work-title {
@@ -239,8 +239,8 @@ button {
 #best-work-detail1, #best-work-detail2, #best-work-detail3, #best-work-detail4, #best-work-detail5 {
     display: none;
     position: absolute;    
-    left: 10%;
-    width: 80%;
+    left: 5%;
+    width: 90%;
     background-color: white;
 }
 
@@ -265,21 +265,24 @@ button {
 }
 
 .screen {
-    height: 40vw;
-    
+    height: 40vw;    
     position: relative;
+    object-fit: scale-down;
 }
 
 .s1 {
     background-image: url("assets/work-images/twitter-redesign.png");
+    background-size: contain;
 }
 
 .s2 {
     background-image: url("assets/work-images/concert-frontend.png");
+    background-size: contain;
 }
 
 .s3 {
     background-image: url("assets/work-images/code-linter.png");
+    background-size: contain;
 }
 
 .close-btn {
@@ -631,6 +634,8 @@ button {
 
     #best-work-detail1, #best-work-detail2, #best-work-detail3, #best-work-detail4, #best-work-detail5 {
         top: 40%;
+        left: 10%;
+        width: 80%;
     }
 
     .screens-btns-wrapper {
