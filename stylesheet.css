@@ -241,8 +241,8 @@ button {
     position: absolute;    
     left: 5%;
     width: 90%;
-    /* background-color: white; */
-    /* background-repeat: no-repeat; */
+    background-color: white; 
+    background-repeat: no-repeat;
 }
 
 #best-work-detail1 {
@@ -271,9 +271,9 @@ button {
     object-fit: scale-down;
 }
 
-.s1 {
+/* .s1 {
     background-image: url("assets/work-images/twitter-redesign.png");    
-}
+} */
 
 .s2 {
     background-image: url("assets/work-images/sky-mario-gif-min.jpeg");    
@@ -291,6 +291,8 @@ button {
 .s1, .s2, .s3, .s4 {
     background-repeat: no-repeat;
     background-size: cover;
+    object-fit: contain;
+    overflow: hidden;
 }
 
 .close-btn {
