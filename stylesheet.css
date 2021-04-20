@@ -269,30 +269,12 @@ button {
     height: 40vw;    
     position: relative;
     object-fit: scale-down;
+    max-height: inherit;
+    overflow-y: scroll;
 }
 
-/* .s1 {
-    background-image: url("assets/work-images/twitter-redesign.png");    
-} */
-
-.s2 {
-    background-image: url("assets/work-images/sky-mario-gif-min.jpeg");    
-}
-
-.s3 {
-    background-image: url("assets/work-images/code-linter.png");
-    background-size: contain;
-}
-
-.s4 {
-    background-image: url("assets/work-images/concert-frontend.png");    
-}
-
-.s1, .s2, .s3, .s4 {
-    background-repeat: no-repeat;
-    background-size: cover;
-    object-fit: contain;
-    overflow: hidden;
+.screen img {
+    width: 100%;
 }
 
 .close-btn {
