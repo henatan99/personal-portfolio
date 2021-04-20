@@ -241,8 +241,8 @@ button {
     position: absolute;    
     left: 5%;
     width: 90%;
-    background-color: white;
-    background-repeat: no-repeat;
+    /* background-color: white; */
+    /* background-repeat: no-repeat; */
 }
 
 #best-work-detail1 {
