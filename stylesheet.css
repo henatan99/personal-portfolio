@@ -308,7 +308,15 @@ button {
 .screen-item {
     width: 31%;
     height: 12vw;
-    background-color: red;
+    /* background-color: red; */
+    object-fit: scale-down;
+    overflow: hidden;
+    align-items: center;
+}
+
+.screen-item img {
+    width: 100%;
+    height: inherit;
 }
 
 .see-btns {
